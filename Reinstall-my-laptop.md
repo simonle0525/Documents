@@ -37,32 +37,36 @@ vi ~/.ssh/id_rsa.pub
 ```
 - Click on Add SSH key
 
-- Clone My respository
+- Clone My Document
+
 ```
-git clone 
+cd ~/Documents/git
+git clone git@github.com:simonle0525/Documents.git
 ```
 
+### Setup Java
 
-
-Link: https://fedoramagazine.org/play-minecraft-fedora/
-
+```
 sudo dnf install java-1.8.0-openjdk
-
-Check java:
+```
+- Check java:
+```
 java -version
+```
+### Setup Minecraft
+Link: https://fedoramagazine.org/play-minecraft-fedora/
 
 Download Minecraft.jar from https://minecraft.net/en-us/download/
 
-mkdir ~/minecraft
-cp ~/Download/Minecraft.jar ~/minecraft/
-
+- Get My Minecraft files
+```
+cd ~/Documents/git
+git clone git@github.com:simonle0525/My-Minecraft.git
+cp -r ~/Documets/git/My-Minecraft/minecraft ~/
+cp -r ~/Documets/git/My-Minecraft/.minecraft ~/
+```
+- To play Minecraft
+```
 cd ~/minecraft
 java -jar Minecraft.jar
-
-Running Minecraft on Ubuntu https://www.lynda.com/articles/running-minecraft-ubuntu-linux
-
-Do this when your done (down there)
-
-                                     cd minecraft/ <- first this one
-
-  			  java -jar Minecraft.jar <-then this one
+```
