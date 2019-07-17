@@ -58,7 +58,20 @@ Link: https://fedoramagazine.org/play-minecraft-fedora/
 
 Download Minecraft.jar from https://minecraft.net/en-us/download/
 
-- Get My Minecraft files
+#### Backup Minecraft Files
+```
+cd
+tar -czvf .minecraft.tar.gz .minecraft
+tar -czvf minecraft.tar.gz minecraft
+cp .minecraft.tar.gz ~/Documents/git/My-Files/
+cp minecraft.tar.gz ~/Documents/git/My-Files/
+cd ~/Documents/git/My-Files
+git status
+git add -A
+git commit -am "TrashNasty"
+git push
+```
+#### Get My Minecraft files
 ```
 cd ~/Documents/git
 git clone git@github.com:simonle0525/My-Minecraft.git
